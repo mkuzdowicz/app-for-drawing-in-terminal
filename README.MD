@@ -1,4 +1,4 @@
-# Application for drawing in terminal code challenge created for fun
+# Application for drawing in terminal
 
 ## Overview
 
