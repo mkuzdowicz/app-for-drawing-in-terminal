@@ -1,8 +1,7 @@
-# Drawing program by Martin Kuzdowicz
+# Application for drawing in terminal code challenge created for fun
 
 ## Overview
 
-Application for drawing in terminal
 code challenge created for fun
 
 * Program is written in **Java 8** and uses **gradle** as a build tool
