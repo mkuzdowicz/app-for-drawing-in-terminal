@@ -1,0 +1,40 @@
+group 'mkuzdowicz'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+defaultTasks 'jar'
+
+archivesBaseName = 'drawing-app'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'mkuzdowicz.drawingapp.Application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'mkuzdowicz.drawingapp.Application'
+    }
+}
+
+run{
+    standardInput = System.in
+    standardOutput = System.out
+}
+
+test {
+    testLogging {
+        events 'passed'
+    }
+}
